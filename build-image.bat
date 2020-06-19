@@ -1,3 +1,3 @@
-@echo off
+rem @echo off
 echo Building image ...
 docker build -t scottpageusmc/docker-example:latest  .
