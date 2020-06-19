@@ -1,8 +1,8 @@
-import express from 'express';
+import * as express from 'express';
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
   return res.json({
     data: 'Glad you made it!'
   });
