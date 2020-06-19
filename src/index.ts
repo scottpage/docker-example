@@ -1,8 +1,9 @@
 import * as express from 'express';
+import * as path from 'path';
 
 const app = express();
 
-app.use('/', express.static('../public'));
+app.use('/', express.static(path.join(__dirname, '..', 'public'), { index: 'index.html' }));
 
 app.get('/imhere', (_, res) => {
   return res.json({
